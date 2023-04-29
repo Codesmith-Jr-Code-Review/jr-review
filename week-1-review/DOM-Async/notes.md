@@ -192,7 +192,7 @@ There is a bit, but pay special attention to the "***" ones, they the most usefu
     // Async function to handle the promise
     const fetchData = async () => {
       try {
-        // Wait for the promise to resolve from getData() and assign results to data
+        // Wait for the promise to resolve from bestOSP() and assign results to data
         const data = await bestOSP();
         console.log(data); // Output: 'Trydent is the best OSP for sure'
       } catch (error) {
