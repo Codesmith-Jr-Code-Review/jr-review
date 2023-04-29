@@ -124,7 +124,7 @@ There is a bit, but pay special attention to the "***" ones, they the most usefu
 - Don't have to wait for one task to complete before starting the next
 
 ### Promises (THIS IS IMPORTANT)
-- Promise is an object that represents the eventual completion (or failure) of an asynch operation and its resulting value
+- Promise is an object that represents the eventual completion (or failure) of an async operation and its resulting value
 - Promises have 3 states:
   1. Pending
   2. Fulfilled
@@ -154,7 +154,7 @@ There is a bit, but pay special attention to the "***" ones, they the most usefu
 
     // Handle the resolved promise using .then()
     promise.then((result) => {
-      console.log(result); // Output: 'Promise resolved'
+      console.log(result); // Output: 'Playstation received'
     });
     /** Summary Because Promises are Important
      * Created a new Promise and stored it in the promise variable.

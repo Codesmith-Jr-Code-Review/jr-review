@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // <h3> Element for the task name
     const todoName = document.createElement('h3');
     todoName.innerText = task.name;
-    todoItem.appendChild(todoName);
+    todoItem.appendChild(todoName); // referring to the todoItem in line 60, not the class! How might we refer to a class?
     // <button> Element for the delete button
     const todoDelete = document.createElement('button');
     todoDelete.setAttribute('class', 'todoDelete');
@@ -85,10 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('#create-todo-submit').addEventListener('click', (e) => {
     e.preventDefault();
     const todoName = document.querySelector('#create-todo-name').value;
-    const todo = {
+    const task = {
       name: todoName,
     };
-    todos.push(todo); // Add the new task to the local todos array
-    addTaskToDOM(todo); // Add the new task to the DOM
+    todos.push(task); // Add the new task to the local todos array
+    addTaskToDOM(task); // Add the new task to the DOM
   });
 });
