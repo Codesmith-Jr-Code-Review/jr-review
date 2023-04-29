@@ -1,15 +1,13 @@
+// Please open todos.html with Liver Server to view this page
+
 document.addEventListener('DOMContentLoaded', () => {
   console.log('ToDo DOM loaded');
-  const user = JSON.parse(localStorage.getItem('user'));
-  const id = JSON.parse(localStorage.getItem('id'));
-  const todos = JSON.parse(localStorage.getItem('todos'));
-  console.log('This is the user:', user);
-  console.log('This is the user id:', id);
-  console.log('This is the todos:', todos);
+  const user = 'TRYDANT';
+  const todos = [];
 
-  // Title Page with User's Name
+  // Title Header
   const title = document.createElement('h1');
-  title.innerText = `ToDo List ${user}`;
+  title.innerText = `ToDo List`;
   document.querySelector('#todoHome').appendChild(title);
 
   // Create Todo Form
@@ -69,27 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Delete Todo
   document.querySelector('#todoDiv').addEventListener('click', (e) => {
     if (e.target.className === 'todoDelete') {
-      const todoName = e.target.parentNode.childNodes[0].innerText;
-      const todoDescription = e.target.parentNode.childNodes[1].innerText;
-      console.log('to delete!', todoName, todoDescription);
-      const todo = {
-        name: todoName,
-        description: todoDescription,
-        id: id,
-      };
-      fetch('/api/todos/delete', {
-        method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(todo),
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          console.log('This is the data:', data);
-          e.target.parentNode.remove();
-        })
-        .catch((err) => console.log('Error:', err));
+      const todoIndex = Array.from(e.target.parentNode.parentNode.children).indexOf(e.target.parentNode);
+      console.log('To delete:', todoIndex);
+      todos.splice(todoIndex, 1); // Remove the task from the local todos array
+      e.target.parentNode.remove();
     }
   });
 
@@ -102,22 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const todo = {
       name: todoName,
       description: todoDescription,
-      id: id,
     };
-    fetch('/api/todos/add', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(todo),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log('This is the data:', data);
-        addTaskToDOM(todo);
-      })
-      .catch((err) => console.log('Error:', err));
-
+    todos.push(todo); // Add the task to the local todos array
+    addTaskToDOM(todo);
   });
 });
-
