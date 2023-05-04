@@ -9,6 +9,7 @@ React hooks allow the you to use state and other React features in functional co
 - [useEffect](#useeffect)
   - [Basic Syntax](#basic-syntax-1)
 - [useContext](#usecontext)
+- [More Links](#more-links)
 
 ## useState
 - `useState` is a hook that allows you to add local state to functional components
@@ -197,6 +198,11 @@ function App() {
  * Greetings component will re-render with the new language value
 */
 ```
+## MORE LINKS
+- [React.dev THIS ONE THIS ONE](https://react.dev/reference/react)
+- [CodeCademy Hooks](https://www.codecademy.com/learn/react-101/modules/react-hooks-u/cheatsheet)
+- [Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
+- 
 
 
 You love the seniors, yes you do
