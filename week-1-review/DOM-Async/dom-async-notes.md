@@ -39,10 +39,10 @@ DOM Manipulation and Async Notes
     ```
   </details>
 ### Modification of Elements
-There is a bit, but pay special attention to the "***" ones, they the most useful
-- `element.innerHTML`: Get or set the HTML content of an element. ***
-- `element.textContent`: Get or set the text content of an element. ***
-- `element.setAttribute(name, value)`: Set an attribute of an element. ***
+There is a bit, but pay special attention to the "⭐" ones, they the most useful
+- `element.innerHTML`: Get or set the HTML content of an element. ⭐
+- `element.textContent`: Get or set the text content of an element. ⭐
+- `element.setAttribute(name, value)`: Set an attribute of an element. ⭐
 - `element.removeAttribute(name)`: Remove an attribute of an element.
 - `element.classList.add(className)`: Add a class to an element.
 - `element.classList.remove(className)`: Remove a class from an element.
