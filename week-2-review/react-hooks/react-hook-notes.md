@@ -9,6 +9,7 @@ React hooks allow the you to use state and other React features in functional co
 - [useEffect](#useeffect)
   - [Basic Syntax](#basic-syntax-1)
 - [useContext](#usecontext)
+- [Lifecycles](#lifecycles)
 - [More Links](#more-links)
 
 ## useState
@@ -79,7 +80,7 @@ function Counter() {
 ```js
 useEffect(() => {
   // side effect code here
-}, dependencies);
+}, [/*dependencies*/]);
 ```
 - Takes two arguments:
   1. Function containing side effect code
@@ -198,15 +199,91 @@ function App() {
  * Greetings component will re-render with the new language value
 */
 ```
+
+## LifeCycles
+Quick review:
+1. `componentDidMount`: Called once when the component is mounted. This is typically where you fetch data or set up subscriptions.
+2. `componentDidUpdate`: Called whenever the component updates (i.e., when its state or props change). This is where you can perform side effects based on changes in state or props.
+3. `componentWillUnmount`: Called just before the component is unmounted and destroyed. This is where you clean up any resources (e.g., timers, subscriptions) that were created during the component's lifecycle.  
+
+![Lifecycle](../assets/lifecycle.png)
+
+Example with React Hook `useEffect`  
+- Recall that `useEffect` hook takes 2 arguments: function that defines the side effect that is run and an array of dependencies.
+```js
+useEffect(() => {
+  // side effect to run
+}, [/* dependencies */]);
+```
+### componentDidMount
+If you have an empty dependency, this imitates `componentDidMount`. This means the side effect only runs once when the component mounts:
+```js
+useEffect(() => {
+  // side effect to run
+}, []);
+```
+### componentDidUpdate
+If you add relevant dependencies in the dependency array, you can imitate the behaviour of `componentDidUpdate`. Every time there is a change or update in the dependencies, the side effect will run:
+```js
+useEffect(() => {
+  // side effect to run
+}, [prop1, prop2, state1]);
+```
+### componentWillUnmount
+If you add in a cleanup function in the `useEffect` hook, you are imitating the behaviour of `componentWillUnmount`. When the component is unmounted, the cleanup function is executed:
+```js
+useEffect(() => {
+  // Set up resources here
+
+  return () => {
+    // Clean up resources here
+  };
+}, []);
+```
+
+Example: Fetching Data and Cleaning Up
+```jsx
+import React, { useState, useEffect } from "react";
+function ExampleComponent() {
+  // Declare state variable 'data' with initial value of null with useState
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    // Define async function to fetch data
+    const fetchData = async () => {
+      // Fetch data from API
+      const response = await fetch("https://api.example.com/data");
+
+      // Parse JSON response
+      const result = await response.json();
+
+      // Update 'data' state with fetched data
+      setData(result);
+    };
+
+    // Call the fetchData function to fetch data when the component mounts
+    fetchData();
+
+    // Clean up when the component unmounts
+    return () => {
+      // Perform any necessary cleanup here (e.g., aborting the fetch request)
+      // I didn't add a specific function b/c I'm too lazy :( but the premise is that you could cleanup whatever is ongoing (such as if the fetch request is still ongoing)
+    };
+  }, []); // Empty dependency array to ensure effect only happens once on mount
+
+  return (
+    <div>
+      {data ? <p>{data.message}</p> : <p>Loading...</p>}
+    </div>
+  );
+}
+```
+
 ## MORE LINKS
 - [React.dev THIS ONE THIS ONE](https://react.dev/reference/react)
 - [CodeCademy Hooks](https://www.codecademy.com/learn/react-101/modules/react-hooks-u/cheatsheet)
 - [Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
-- 
 
 
 You love the seniors, yes you do
-GIVE TRYDENT A STAR IF YOU HAVEN'T ALREADY [-->TRIDENT GITHUB LINK <--](https://github.com/oslabs-beta/trydent)
-
-PLUG TRYDENT TO YOUR MOM, YOUR DAD, YOUR DOG, YOUR CAT, THE GIRL YOU LIKE, THE GUY YOU LIKE, TO EVERYONE!
 :)
