@@ -29,7 +29,6 @@ Learning can be hard, and it is important to remember everyone learns at their o
 ---
 Please feel free to reach out with any questions you may have!
 
-- Adam Vanek [[Github](https://github.com/atvanek)] [[LinkedIn](https://www.linkedin.com/in/a-vanek/)]  
 - Billy (William) Murphy [[Github](https://github.com/olsoninoslo)] [[LinkedIn](https://www.linkedin.com/in/w-william-j-murphy/)]  
 - Rachel Kucharski [[Github](https://github.com/rachelk585)] [[LinkedIn](https://www.linkedin.com/in/rachelkucharski/)]
 - Samuel Lee [[Github](https://github.com/leesamuel423)] [[LinkedIn](https://www.linkedin.com/in/leesamuel423/)]
