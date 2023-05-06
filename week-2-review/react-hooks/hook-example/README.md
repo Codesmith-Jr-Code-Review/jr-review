@@ -23,7 +23,7 @@ This project demonstrates the usage of React hooks, specifically useState and us
 To run the project, follow these steps:
 1. Change to the project directory:
   ```
-  cd week-2-review/hook-example
+  cd week-2-review/react-hooks/hook-example
   ```
 2. Install the dependencies:
   ```
