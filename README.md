@@ -42,4 +42,5 @@ And give these OSPs a ⭐
 ⏰ [Chronos](https://github.com/open-source-labs/Chronos) ⏰  
 ✨ [Recoilize](https://github.com/open-source-labs/Recoilize) ✨  
 🕵️‍♂️ [dbSpy](https://github.com/open-source-labs/dbSpy) 🕵️‍♂️
+⏲️ [ReacTime](https://github.com/open-source-labs/reactime)⏲️
 
