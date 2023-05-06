@@ -39,4 +39,8 @@ And give these OSPs a ⭐
 🔱 [Trydent](https://github.com/oslabs-beta/trydent) 🔱  
 🧪 [ReacType](https://github.com/open-source-labs/ReacType) 🧪  
 🌊 [Swell](https://github.com/open-source-labs/Swell) 🌊  
+🍃 [Spearmint](https://github.com/open-source-labs/spearmint)  🍃  
+⏰ [Chronos](https://github.com/open-source-labs/Chronos) ⏰  
+✨ [Recoilize](https://github.com/open-source-labs/Recoilize) ✨  
+🕵️‍♂️ [dbSpy](https://github.com/open-source-labs/dbSpy) 🕵️‍♂️
 
