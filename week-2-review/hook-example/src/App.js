@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 import Counter from './components/Counter';
 import ColorToggle from './components/ColorToggle';
 
 // Create a context to share background color state across components
-export const BackgroundColorContext = React.createContext();
+export const BackgroundColorContext = createContext();
 
 const App = () => {
   // Declare the background color state using the useState hook. Initialize backgroundColor to 'lightblue'
