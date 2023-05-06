@@ -13,12 +13,20 @@ Welcome to the Junior Review repository! This repo is designed to help you get a
   - [React Hooks Notes](/week-2-review/react-hooks/react-hook-notes.md)
   - [React Hooks Example](/week-2-review/react-hooks/hook-example/)
 
+---
+😄 Remember to be patient with yourself!
+Learning can be hard, and it is important to remember everyone learns at their own pace~  
 
-### Remember to be patient with yourself!
-Learning can be hard, and it is important to remember everyone learns at their own pace~
+<img src="./assets/hobbit.gif" width="250"/>
 
 
-### Don't be afraid to ask for help!
+✋ Don't be afraid to ask for help!
+
+<img src="./assets/explain.gif" width="250"/>
+
+
+
+---
 Please feel free to reach out with any questions you may have!
 
 - Adam Vanek [[Github](https://github.com/atvanek)] [[LinkedIn](https://www.linkedin.com/in/a-vanek/)]  
@@ -31,3 +39,4 @@ And give these OSPs a ⭐
 🔱 [Trydent](https://github.com/oslabs-beta/trydent) 🔱  
 🧪 [ReacType](https://github.com/open-source-labs/ReacType) 🧪  
 🌊 [Swell](https://github.com/open-source-labs/Swell) 🌊  
+
