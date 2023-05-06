@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  background-color: #172a3a;
+}
+
+.container {
+  padding: 10rem;
+  margin: 10rem;
+  width: 10rem;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 0 25rem;
+}
+
+#headLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10rem auto 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fffef2;
+}
+
+#board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 3;
+  margin: 2rem auto;
+  width: 400px;
+  border-style: solid 4px;
+  border-radius: 20px;
+  background-color: #70c1b3;
+}
+
+.cells {
+  font-size: xx-large;
+  font-family: "Aclonica" sans-serif;
+  font-style: italic;
+  color: #172a3a;
+  background-color: #cf8e80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px 20px;
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  border-radius: 20px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 3;
+  margin: auto;
+  width: 400px;
+  border-style: solid 4px;
+}
+
+.boxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border-style: none;
+}
+
+#resetDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: larger;
+}
+
+.resetBtn {
+  font-size: large;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172a3a;
+  background-color: #cff27e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px 20px;
+  width: 10rem;
+  height: 5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fffef2;
+}
