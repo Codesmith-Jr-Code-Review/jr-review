@@ -1,10 +1,10 @@
 # Postman Tutorial
 
 ## Table of Contents
-[Overview](#overview)
-[Postman UI](#postman-ui)
-[GET and POST request example](#make-a-new-request-get-and-post)
-[Responses](#responses)
+[Overview](#overview)  
+[Postman UI](#postman-ui)  
+[GET and POST request example](#make-a-new-request-get-and-post)  
+[Responses](#responses)  
 
 
 ## Overview
