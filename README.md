@@ -16,7 +16,7 @@ Welcome to the Junior Review repository! This repo is designed to help you get a
 - [ticTacToeRedux](/week-2-review/ticTacToeRedux/)
 
 [Week 3](/week-3-review/)
-- [Node and Postman](/week-3-review/node-postman/)
+- [Postman](/week-3-review/postman/)
 
 ---
 😄 Remember to be patient with yourself!
