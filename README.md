@@ -9,9 +9,14 @@ Welcome to the Junior Review repository! This repo is designed to help you get a
   - [Todo List Example](/week-1-review/DOM-Async/todo-list-practice/)
 
 [Week 2](/week-2-review/)
+- [Class Components](/week-2-review/class-components/)
 - [React Hooks](/week-2-review/react-hooks/)
   - [React Hooks Notes](/week-2-review/react-hooks/react-hook-notes.md)
   - [React Hooks Example](/week-2-review/react-hooks/hook-example/)
+- [ticTacToeRedux](/week-2-review/ticTacToeRedux/)
+
+[Week 3](/week-3-review/)
+- [Node and Postman](/week-3-review/node-postman/)
 
 ---
 😄 Remember to be patient with yourself!
